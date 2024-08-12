@@ -21,6 +21,7 @@ from brewery import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path('login/', views.login_view, name='login'),
     path('maltes/', views.malte_list, name='malte_list'),
     path('maltes/<int:pk>/', views.malte_detail, name='malte_detail'),
     path('maltes/new/', views.malte_create, name='malte_create'),
